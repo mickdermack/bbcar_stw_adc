@@ -1,0 +1,6 @@
+[submodule "software/STM32CubeG4"]
+	path = software/STM32CubeG4
+	url = https://github.com/STMicroelectronics/STM32CubeG4.git
+[submodule "software/bobbycar-protocol"]
+	path = software/bobbycar-protocol
+	url = https://github.com/bobbycar-graz/bobbycar-protocol.git

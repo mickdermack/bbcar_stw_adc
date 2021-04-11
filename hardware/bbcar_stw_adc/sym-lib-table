@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name bbcar_stw_adc)(type Legacy)(uri ${KIPRJMOD}/bbcar_stw_adc.lib)(options "")(descr ""))
+  (lib (name esdcan05-2bwy)(type Legacy)(uri ${KIPRJMOD}/../common/symbols/esdcan05-2bwy.lib)(options "")(descr ""))
+)

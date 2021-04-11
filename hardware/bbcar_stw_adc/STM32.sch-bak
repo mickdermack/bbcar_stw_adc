@@ -1,0 +1,786 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 5 8
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L bbcar_stw_adc:STM32G431KBUx U?
+U 1 1 5F05A85E
+P 3200 3550
+AR Path="/5F05A85E" Ref="U?"  Part="1" 
+AR Path="/5F05568E/5F05A85E" Ref="U501"  Part="1" 
+F 0 "U501" H 2650 4550 50  0000 C CNN
+F 1 "STM32G431KBUx" H 2650 4450 50  0000 C CNN
+F 2 "Package_DFN_QFN:QFN-32-1EP_5x5mm_P0.5mm_EP3.45x3.45mm" H 2800 2650 50  0001 R CNN
+F 3 "" H 3200 3550 50  0001 C CNN
+F 4 "511-STM32G431KBU6" H 3200 3550 50  0001 C CNN "Mouser Nr"
+	1    3200 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F05A864
+P 3400 5050
+AR Path="/5F05A864" Ref="#PWR?"  Part="1" 
+AR Path="/5F05568E/5F05A864" Ref="#PWR0106"  Part="1" 
+F 0 "#PWR0106" H 3400 4800 50  0001 C CNN
+F 1 "GND" H 3405 4877 50  0000 C CNN
+F 2 "" H 3400 5050 50  0001 C CNN
+F 3 "" H 3400 5050 50  0001 C CNN
+	1    3400 5050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 4950 3400 5050
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5F05A86B
+P 3000 2500
+AR Path="/5F05A86B" Ref="#PWR?"  Part="1" 
+AR Path="/5F05568E/5F05A86B" Ref="#PWR0107"  Part="1" 
+F 0 "#PWR0107" H 3000 2350 50  0001 C CNN
+F 1 "+3V3" H 3015 2673 50  0000 C CNN
+F 2 "" H 3000 2500 50  0001 C CNN
+F 3 "" H 3000 2500 50  0001 C CNN
+	1    3000 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3000 2500 3000 2600
+Wire Wire Line
+	3100 2600 3200 2600
+Wire Wire Line
+	3300 2600 3300 2650
+Wire Wire Line
+	3200 2600 3200 2650
+Connection ~ 3200 2600
+Wire Wire Line
+	3200 2600 3300 2600
+Wire Wire Line
+	3100 2600 3100 2650
+$Comp
+L Connector_Generic:Conn_02x05_Counter_Clockwise J?
+U 1 1 5F05A878
+P 9600 4950
+AR Path="/5F05A878" Ref="J?"  Part="1" 
+AR Path="/5F05568E/5F05A878" Ref="J504"  Part="1" 
+F 0 "J504" H 9650 5367 50  0000 C CNN
+F 1 "Tag-Connect_2050" H 9650 5276 50  0000 C CNN
+F 2 "Connector:Tag-Connect_TC2050-IDC-NL_2x05_P1.27mm_Vertical" H 9600 4950 50  0001 C CNN
+F 3 "~" H 9600 4950 50  0001 C CNN
+F 4 "~" H 9600 4950 50  0001 C CNN "Mouser Nr"
+	1    9600 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5F05A87E
+P 9100 4500
+AR Path="/5F05A87E" Ref="#PWR?"  Part="1" 
+AR Path="/5F05568E/5F05A87E" Ref="#PWR0108"  Part="1" 
+F 0 "#PWR0108" H 9100 4350 50  0001 C CNN
+F 1 "+3V3" H 9115 4673 50  0000 C CNN
+F 2 "" H 9100 4500 50  0001 C CNN
+F 3 "" H 9100 4500 50  0001 C CNN
+	1    9100 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9100 4500 9100 4750
+Wire Wire Line
+	9100 4750 9400 4750
+Text Label 8950 4850 2    50   ~ 0
+SWDIO
+Wire Wire Line
+	9400 4850 8950 4850
+$Comp
+L power:GND #PWR?
+U 1 1 5F05A888
+P 9100 5450
+AR Path="/5F05A888" Ref="#PWR?"  Part="1" 
+AR Path="/5F05568E/5F05A888" Ref="#PWR0109"  Part="1" 
+F 0 "#PWR0109" H 9100 5200 50  0001 C CNN
+F 1 "GND" H 9105 5277 50  0000 C CNN
+F 2 "" H 9100 5450 50  0001 C CNN
+F 3 "" H 9100 5450 50  0001 C CNN
+	1    9100 5450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9400 4950 9100 4950
+Wire Wire Line
+	9100 4950 9100 5150
+Text Label 8950 5050 2    50   ~ 0
+SWCLK
+Wire Wire Line
+	9400 5050 8950 5050
+Wire Wire Line
+	9400 5150 9100 5150
+Connection ~ 9100 5150
+Wire Wire Line
+	9100 5150 9100 5400
+Text Label 10450 5150 0    50   ~ 0
+SWO
+Wire Wire Line
+	10450 5150 9900 5150
+Text Label 10450 4850 0    50   ~ 0
+~TRST
+Wire Wire Line
+	10450 4850 9900 4850
+Text Label 10450 4750 0    50   ~ 0
+~RESET
+Connection ~ 9100 5400
+Wire Wire Line
+	9100 5400 9100 5450
+Wire Wire Line
+	9900 4950 9950 4950
+Wire Wire Line
+	9950 4950 9950 5050
+Wire Wire Line
+	9950 5050 9900 5050
+Wire Wire Line
+	9950 5050 9950 5400
+Connection ~ 9950 5050
+Wire Wire Line
+	9950 5400 9100 5400
+Text Label 2150 2850 2    50   ~ 0
+~RESET
+$Comp
+L Device:R R?
+U 1 1 5F05A8A3
+P 10150 4750
+AR Path="/5F05A8A3" Ref="R?"  Part="1" 
+AR Path="/5F05568E/5F05A8A3" Ref="R505"  Part="1" 
+F 0 "R505" V 9943 4750 50  0000 C CNN
+F 1 "1k" V 10034 4750 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 10080 4750 50  0001 C CNN
+F 3 "~" H 10150 4750 50  0001 C CNN
+F 4 "667-ERJ-3GEYJ102V" H 10150 4750 50  0001 C CNN "Mouser Nr"
+	1    10150 4750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9900 4750 10000 4750
+Wire Wire Line
+	10300 4750 10450 4750
+Text Label 2150 3950 2    50   ~ 0
+~TRST
+Wire Wire Line
+	2150 3950 2650 3950
+Text Label 2150 3850 2    50   ~ 0
+SWO
+Wire Wire Line
+	2150 3850 2650 3850
+Text Label 4250 4650 3    50   ~ 0
+SWDIO
+Text Label 4350 4650 3    50   ~ 0
+SWCLK
+Wire Wire Line
+	3000 2600 3100 2600
+Connection ~ 3100 2600
+Wire Wire Line
+	3000 4550 3000 4600
+Wire Wire Line
+	3000 4600 3100 4600
+Wire Wire Line
+	3100 4550 3100 4600
+Connection ~ 3100 4600
+Wire Wire Line
+	3100 4600 3200 4600
+Wire Wire Line
+	3200 4550 3200 4600
+Connection ~ 3200 4600
+Wire Wire Line
+	3200 4600 3300 4600
+Wire Wire Line
+	3300 4550 3300 4600
+Wire Wire Line
+	3300 4600 3400 4600
+Wire Wire Line
+	3400 4600 3400 4950
+Connection ~ 3300 4600
+Connection ~ 3400 4950
+$Comp
+L Device:R R?
+U 1 1 5F05A8C2
+P 2550 4600
+AR Path="/5F05A8C2" Ref="R?"  Part="1" 
+AR Path="/5F05568E/5F05A8C2" Ref="R501"  Part="1" 
+F 0 "R501" H 2620 4646 50  0000 L CNN
+F 1 "10k" H 2620 4555 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 2480 4600 50  0001 C CNN
+F 3 "~" H 2550 4600 50  0001 C CNN
+F 4 "667-ERJ-3GEYJ103V" H 2550 4600 50  0001 C CNN "Mouser Nr"
+	1    2550 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2650 4350 2550 4350
+Wire Wire Line
+	2550 4350 2550 4450
+Wire Wire Line
+	2550 4750 2550 4950
+Wire Wire Line
+	2550 4950 3400 4950
+Wire Wire Line
+	3700 3950 4300 3950
+Wire Wire Line
+	3700 4050 4400 4050
+Wire Wire Line
+	2150 2850 2650 2850
+Wire Wire Line
+	9300 3200 9700 3200
+Text Label 10050 3200 0    50   ~ 0
+~RESET
+Text Notes 9450 4350 0    50   ~ 0
+Tag-Connect debug header
+Text Notes 9600 2650 0    50   ~ 0
+UART1 (programming) header
+$Comp
+L power:GND #PWR?
+U 1 1 5F05A8DB
+P 9350 3650
+AR Path="/5F05A8DB" Ref="#PWR?"  Part="1" 
+AR Path="/5F05568E/5F05A8DB" Ref="#PWR0113"  Part="1" 
+F 0 "#PWR0113" H 9350 3400 50  0001 C CNN
+F 1 "GND" H 9355 3477 50  0000 C CNN
+F 2 "" H 9350 3650 50  0001 C CNN
+F 3 "" H 9350 3650 50  0001 C CNN
+	1    9350 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9350 3500 9350 3650
+Wire Wire Line
+	9300 3500 9350 3500
+Wire Wire Line
+	1600 3350 2650 3350
+Wire Wire Line
+	2650 3450 1600 3450
+Wire Wire Line
+	3700 2850 3900 2850
+Wire Wire Line
+	3700 2950 4000 2950
+$Comp
+L Device:R R?
+U 1 1 5F05A8EB
+P 9850 3200
+AR Path="/5F05A8EB" Ref="R?"  Part="1" 
+AR Path="/5F05568E/5F05A8EB" Ref="R503"  Part="1" 
+F 0 "R503" V 9643 3200 50  0000 C CNN
+F 1 "1k" V 9734 3200 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 9780 3200 50  0001 C CNN
+F 3 "~" H 9850 3200 50  0001 C CNN
+F 4 "667-ERJ-3GEYJ102V" H 9850 3200 50  0001 C CNN "Mouser Nr"
+	1    9850 3200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	10000 3200 10050 3200
+Text Label 2150 4350 2    50   ~ 0
+BOOT0
+Wire Wire Line
+	2150 4350 2550 4350
+Connection ~ 2550 4350
+Text Label 10600 3300 0    50   ~ 0
+UART1_RXD
+$Comp
+L Device:R R?
+U 1 1 5F05A8FC
+P 10400 3300
+AR Path="/5F05A8FC" Ref="R?"  Part="1" 
+AR Path="/5F05568E/5F05A8FC" Ref="R506"  Part="1" 
+F 0 "R506" V 10193 3300 50  0000 C CNN
+F 1 "1k" V 10284 3300 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 10330 3300 50  0001 C CNN
+F 3 "~" H 10400 3300 50  0001 C CNN
+F 4 "667-ERJ-3GEYJ102V" H 10400 3300 50  0001 C CNN "Mouser Nr"
+	1    10400 3300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	10250 3300 9300 3300
+Wire Wire Line
+	10600 3300 10550 3300
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5F05A904
+P 9350 2750
+AR Path="/5F05A904" Ref="#PWR?"  Part="1" 
+AR Path="/5F05568E/5F05A904" Ref="#PWR0114"  Part="1" 
+F 0 "#PWR0114" H 9350 2600 50  0001 C CNN
+F 1 "+3V3" H 9365 2923 50  0000 C CNN
+F 2 "" H 9350 2750 50  0001 C CNN
+F 3 "" H 9350 2750 50  0001 C CNN
+	1    9350 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9350 2750 9350 3000
+Wire Wire Line
+	9350 3000 9300 3000
+Text Label 10600 3400 0    50   ~ 0
+UART1_TXD
+Text HLabel 3900 2500 1    50   BiDi ~ 0
+PA0
+Text HLabel 4000 2500 1    50   BiDi ~ 0
+PA1
+Wire Wire Line
+	3900 2500 3900 2850
+Connection ~ 3900 2850
+Wire Wire Line
+	4000 2500 4000 2950
+Connection ~ 4000 2950
+Wire Wire Line
+	4000 2950 5450 2950
+Text Notes 3850 2200 0    50   ~ 0
+To potis
+$Comp
+L Device:C C?
+U 1 1 5F065302
+P 2650 1300
+AR Path="/5F065302" Ref="C?"  Part="1" 
+AR Path="/5F05568E/5F065302" Ref="C501"  Part="1" 
+F 0 "C501" H 2765 1346 50  0000 L CNN
+F 1 "4.7u" H 2765 1255 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 2688 1150 50  0001 C CNN
+F 3 "~" H 2650 1300 50  0001 C CNN
+F 4 "963-EMF212AB7475KGHT" H 2650 1300 50  0001 C CNN "Mouser Nr"
+	1    2650 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F065308
+P 2650 1550
+AR Path="/5F065308" Ref="#PWR?"  Part="1" 
+AR Path="/5F05568E/5F065308" Ref="#PWR0115"  Part="1" 
+F 0 "#PWR0115" H 2650 1300 50  0001 C CNN
+F 1 "GND" H 2655 1377 50  0000 C CNN
+F 2 "" H 2650 1550 50  0001 C CNN
+F 3 "" H 2650 1550 50  0001 C CNN
+	1    2650 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5F06530E
+P 2650 1050
+AR Path="/5F06530E" Ref="#PWR?"  Part="1" 
+AR Path="/5F05568E/5F06530E" Ref="#PWR0116"  Part="1" 
+F 0 "#PWR0116" H 2650 900 50  0001 C CNN
+F 1 "+3V3" H 2665 1223 50  0000 C CNN
+F 2 "" H 2650 1050 50  0001 C CNN
+F 3 "" H 2650 1050 50  0001 C CNN
+	1    2650 1050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2650 1050 2650 1100
+Wire Wire Line
+	2650 1450 2650 1500
+Wire Wire Line
+	2650 1500 3050 1500
+Connection ~ 2650 1500
+Wire Wire Line
+	2650 1500 2650 1550
+$Comp
+L Device:C C?
+U 1 1 5F06531A
+P 3050 1300
+AR Path="/5F06531A" Ref="C?"  Part="1" 
+AR Path="/5F05568E/5F06531A" Ref="C502"  Part="1" 
+F 0 "C502" H 3165 1346 50  0000 L CNN
+F 1 "0.1u" H 3165 1255 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3088 1150 50  0001 C CNN
+F 3 "~" H 3050 1300 50  0001 C CNN
+F 4 "963-HMK107B7104KAHT" H 3050 1300 50  0001 C CNN "Mouser Nr"
+	1    3050 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5F065321
+P 3450 1300
+AR Path="/5F065321" Ref="C?"  Part="1" 
+AR Path="/5F05568E/5F065321" Ref="C503"  Part="1" 
+F 0 "C503" H 3565 1346 50  0000 L CNN
+F 1 "0.1u" H 3565 1255 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3488 1150 50  0001 C CNN
+F 3 "~" H 3450 1300 50  0001 C CNN
+F 4 "963-HMK107B7104KAHT" H 3450 1300 50  0001 C CNN "Mouser Nr"
+	1    3450 1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3050 1450 3050 1500
+Wire Wire Line
+	3050 1500 3450 1500
+Wire Wire Line
+	3450 1500 3450 1450
+Connection ~ 3050 1500
+Connection ~ 3450 1500
+Wire Wire Line
+	3450 1100 3450 1150
+Wire Wire Line
+	3450 1100 3050 1100
+Wire Wire Line
+	3050 1100 3050 1150
+Connection ~ 3450 1100
+Wire Wire Line
+	3050 1100 2650 1100
+Connection ~ 3050 1100
+Connection ~ 2650 1100
+Wire Wire Line
+	2650 1100 2650 1150
+Text Notes 2850 1000 0    50   ~ 0
+STM32 VDD Bypassing\none 0.1u each for pin 1, 17
+$Comp
+L Device:C C?
+U 1 1 5F065336
+P 4900 1300
+AR Path="/5F065336" Ref="C?"  Part="1" 
+AR Path="/5F05568E/5F065336" Ref="C506"  Part="1" 
+F 0 "C506" H 5015 1346 50  0000 L CNN
+F 1 "10n" H 5015 1255 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4938 1150 50  0001 C CNN
+F 3 "~" H 4900 1300 50  0001 C CNN
+F 4 "963-UMK107B7103KAHT" H 4900 1300 50  0001 C CNN "Mouser Nr"
+	1    4900 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5F06533D
+P 4150 1300
+AR Path="/5F06533D" Ref="C?"  Part="1" 
+AR Path="/5F05568E/5F06533D" Ref="C504"  Part="1" 
+F 0 "C504" H 4265 1346 50  0000 L CNN
+F 1 "1u" H 4265 1255 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 4188 1150 50  0001 C CNN
+F 3 "~" H 4150 1300 50  0001 C CNN
+F 4 "963-UMF212B7105KGHT" H 4150 1300 50  0001 C CNN "Mouser Nr"
+	1    4150 1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 1500 4900 1450
+Wire Wire Line
+	4150 1450 4150 1500
+Connection ~ 4150 1500
+Wire Wire Line
+	4150 1500 4500 1500
+Wire Wire Line
+	4150 1100 4150 1150
+Wire Wire Line
+	4150 1100 4500 1100
+Wire Wire Line
+	4900 1100 4900 1150
+Connection ~ 4150 1100
+Text Notes 4100 1000 0    50   ~ 0
+STM32 VDDA Bypassing
+$Comp
+L Device:C C?
+U 1 1 5F06534D
+P 4500 1300
+AR Path="/5F06534D" Ref="C?"  Part="1" 
+AR Path="/5F05568E/5F06534D" Ref="C505"  Part="1" 
+F 0 "C505" H 4615 1346 50  0000 L CNN
+F 1 "0.1u" H 4615 1255 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4538 1150 50  0001 C CNN
+F 3 "~" H 4500 1300 50  0001 C CNN
+F 4 "963-HMK107B7104KAHT" H 4500 1300 50  0001 C CNN "Mouser Nr"
+	1    4500 1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4500 1150 4500 1100
+Connection ~ 4500 1100
+Wire Wire Line
+	4500 1100 4900 1100
+Wire Wire Line
+	4500 1450 4500 1500
+Connection ~ 4500 1500
+Wire Wire Line
+	4500 1500 4900 1500
+Wire Wire Line
+	3450 1500 4150 1500
+Wire Wire Line
+	3450 1100 4150 1100
+Text HLabel 4300 2500 1    50   BiDi ~ 0
+PA11
+Text HLabel 4400 2500 1    50   BiDi ~ 0
+PA12
+Text Notes 4250 2200 0    50   ~ 0
+To CAN TRX
+Wire Wire Line
+	4300 2500 4300 3950
+Wire Wire Line
+	4400 2500 4400 4050
+$Comp
+L Connector_Generic:Conn_01x06 J503
+U 1 1 5F0AF7E9
+P 9100 3300
+F 0 "J503" H 9200 2800 50  0000 C CNN
+F 1 "Conn_01x06" H 9200 2900 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 9100 3300 50  0001 C CNN
+F 3 "~" H 9100 3300 50  0001 C CNN
+F 4 "~" H 9100 3300 50  0001 C CNN "Mouser Nr"
+	1    9100 3300
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F0B571D
+P 9500 3100
+AR Path="/5F0B571D" Ref="R?"  Part="1" 
+AR Path="/5F05568E/5F0B571D" Ref="R502"  Part="1" 
+F 0 "R502" V 9293 3100 50  0000 C CNN
+F 1 "1k" V 9384 3100 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 9430 3100 50  0001 C CNN
+F 3 "~" H 9500 3100 50  0001 C CNN
+F 4 "667-ERJ-3GEYJ102V" H 9500 3100 50  0001 C CNN "Mouser Nr"
+	1    9500 3100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9350 3100 9300 3100
+Wire Wire Line
+	9650 3100 9700 3100
+Wire Wire Line
+	9700 3100 9700 2900
+Wire Wire Line
+	9700 2900 10050 2900
+Text Label 10050 2900 0    50   ~ 0
+BOOT0
+Wire Wire Line
+	4350 4250 4350 4650
+Wire Wire Line
+	4350 4250 3700 4250
+Wire Wire Line
+	4250 4650 4250 4150
+Wire Wire Line
+	3700 4150 4250 4150
+Wire Wire Line
+	9300 3400 9900 3400
+Wire Wire Line
+	10200 3400 10600 3400
+$Comp
+L Device:R R?
+U 1 1 5F05A90C
+P 10050 3400
+AR Path="/5F05A90C" Ref="R?"  Part="1" 
+AR Path="/5F05568E/5F05A90C" Ref="R504"  Part="1" 
+F 0 "R504" V 9843 3400 50  0000 C CNN
+F 1 "1k" V 9934 3400 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 9980 3400 50  0001 C CNN
+F 3 "~" H 10050 3400 50  0001 C CNN
+F 4 "667-ERJ-3GEYJ102V" H 10050 3400 50  0001 C CNN "Mouser Nr"
+	1    10050 3400
+	0    1    -1   0   
+$EndComp
+Text Label 6900 3750 2    50   ~ 0
+BOOT0
+Wire Wire Line
+	6900 3750 7100 3750
+Text Label 2150 4250 2    50   ~ 0
+UART1_RXD
+Wire Wire Line
+	2150 4250 2650 4250
+Text Label 2150 4150 2    50   ~ 0
+UART1_TXD
+Wire Wire Line
+	2150 4150 2650 4150
+Text Label 2150 4050 2    50   ~ 0
+PB5
+Wire Wire Line
+	2150 4050 2650 4050
+Text Label 6900 3850 2    50   ~ 0
+UART1_RXD
+Wire Wire Line
+	6900 3850 7100 3850
+Text Label 6900 3950 2    50   ~ 0
+UART1_TXD
+Wire Wire Line
+	6900 3950 7100 3950
+$Comp
+L Connector_Generic:Conn_01x12 J502
+U 1 1 5F0F35EA
+P 7300 4150
+F 0 "J502" H 7380 4142 50  0000 L CNN
+F 1 "Conn_01x12" H 7380 4051 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x12_P2.54mm_Vertical" H 7300 4150 50  0001 C CNN
+F 3 "~" H 7300 4150 50  0001 C CNN
+F 4 "~" H 7300 4150 50  0001 C CNN "Mouser Nr"
+	1    7300 4150
+	1    0    0    -1  
+$EndComp
+Text Label 6900 3650 2    50   ~ 0
+~RESET
+Wire Wire Line
+	6900 3650 7100 3650
+Text Label 6900 4050 2    50   ~ 0
+PB5
+Wire Wire Line
+	6900 4050 7100 4050
+Text Label 6900 4150 2    50   ~ 0
+~TRST
+Wire Wire Line
+	6900 4150 7100 4150
+Text Label 6900 4250 2    50   ~ 0
+SWO
+Wire Wire Line
+	6900 4250 7100 4250
+Wire Wire Line
+	3700 4350 7100 4350
+Wire Wire Line
+	6050 4250 6050 4450
+Wire Wire Line
+	6050 4450 7100 4450
+Wire Wire Line
+	6150 4150 6150 4550
+Wire Wire Line
+	6150 4550 7100 4550
+Wire Wire Line
+	6250 4050 6250 4650
+Wire Wire Line
+	6250 4650 7100 4650
+Wire Wire Line
+	6350 3950 6350 4750
+Wire Wire Line
+	6350 4750 7100 4750
+$Comp
+L Connector_Generic:Conn_01x12 J501
+U 1 1 5F143AC8
+P 7300 2800
+F 0 "J501" H 7380 2792 50  0000 L CNN
+F 1 "Conn_01x12" H 7380 2701 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x12_P2.54mm_Vertical" H 7300 2800 50  0001 C CNN
+F 3 "~" H 7300 2800 50  0001 C CNN
+F 4 "~" H 7300 2800 50  0001 C CNN "Mouser Nr"
+	1    7300 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6350 3950 4300 3950
+Connection ~ 4300 3950
+Wire Wire Line
+	4400 4050 6250 4050
+Connection ~ 4400 4050
+Wire Wire Line
+	6150 4150 4250 4150
+Connection ~ 4250 4150
+Wire Wire Line
+	4350 4250 6050 4250
+Connection ~ 4350 4250
+Wire Wire Line
+	6350 3850 6350 3400
+Wire Wire Line
+	6350 3400 7100 3400
+Wire Wire Line
+	3700 3850 6350 3850
+Wire Wire Line
+	6250 3750 6250 3300
+Wire Wire Line
+	6250 3300 7100 3300
+Wire Wire Line
+	3700 3750 6250 3750
+Wire Wire Line
+	3700 3650 6150 3650
+Wire Wire Line
+	6150 3650 6150 3200
+Wire Wire Line
+	6150 3200 7100 3200
+$Sheet
+S 1050 3250 550  300 
+U 5F05A8E3
+F0 "HSE_Crystal" 50
+F1 "HSE_Crystal.sch" 50
+F2 "XTAL1" U R 1600 3350 50 
+F3 "XTAL2" U R 1600 3450 50 
+$EndSheet
+Text Label 2150 3650 2    50   ~ 0
+PB0
+Wire Wire Line
+	2150 3650 2650 3650
+Text Label 6900 3100 2    50   ~ 0
+PB0
+Wire Wire Line
+	6900 3100 7100 3100
+Wire Wire Line
+	3700 3550 6050 3550
+Wire Wire Line
+	6050 3550 6050 3000
+Wire Wire Line
+	6050 3000 7100 3000
+Wire Wire Line
+	3700 3450 5950 3450
+Wire Wire Line
+	5950 3450 5950 2900
+Wire Wire Line
+	5950 2900 7100 2900
+Wire Wire Line
+	3700 3350 5850 3350
+Wire Wire Line
+	5850 3350 5850 2800
+Wire Wire Line
+	5850 2800 7100 2800
+Wire Wire Line
+	3700 3250 5750 3250
+Wire Wire Line
+	5750 3250 5750 2700
+Wire Wire Line
+	5750 2700 7100 2700
+Wire Wire Line
+	3700 3150 4950 3150
+Wire Wire Line
+	5650 3150 5650 2600
+Wire Wire Line
+	5650 2600 7100 2600
+Wire Wire Line
+	5550 3050 5550 2500
+Wire Wire Line
+	5550 2500 7100 2500
+Wire Wire Line
+	5450 2950 5450 2400
+Wire Wire Line
+	5450 2400 7100 2400
+Wire Wire Line
+	5350 2850 5350 2300
+Wire Wire Line
+	5350 2300 7100 2300
+Wire Wire Line
+	3900 2850 5350 2850
+Text HLabel 4850 2500 1    50   BiDi ~ 0
+PA2
+Wire Wire Line
+	4850 2500 4850 3050
+Wire Wire Line
+	3700 3050 4850 3050
+Connection ~ 4850 3050
+Wire Wire Line
+	4850 3050 5550 3050
+Text HLabel 4950 2500 1    50   BiDi ~ 0
+PA3
+Wire Wire Line
+	4950 2500 4950 3150
+Connection ~ 4950 3150
+Wire Wire Line
+	4950 3150 5650 3150
+Text Notes 7400 2750 0    50   ~ 0
+Right side breakout header
+Text Notes 7400 4100 0    50   ~ 0
+Left side breakout header
+Text Notes 7400 3550 0    50   ~ 0
+The pins of the breakout headers are\nin physical order, with the STM32\nrotated 90° clockwise
+$EndSCHEMATC

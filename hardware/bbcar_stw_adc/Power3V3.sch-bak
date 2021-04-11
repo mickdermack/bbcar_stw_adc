@@ -1,0 +1,137 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 8
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text HLabel 3350 3300 0    50   Input ~ 0
+VIN
+Text HLabel 3350 3800 0    50   Input ~ 0
+GND
+$Comp
+L Device:C C202
+U 1 1 5EFDD6B2
+P 4600 3550
+F 0 "C202" H 4715 3596 50  0000 L CNN
+F 1 "1u" H 4715 3505 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 4638 3400 50  0001 C CNN
+F 3 "~" H 4600 3550 50  0001 C CNN
+F 4 "963-UMF212B7105KGHT" H 4600 3550 50  0001 C CNN "Mouser Nr"
+	1    4600 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 3400 4600 3300
+Connection ~ 4600 3300
+Wire Wire Line
+	4600 3700 4600 3800
+Connection ~ 4600 3800
+$Comp
+L Device:C C203
+U 1 1 5EFDDB84
+P 5900 3550
+F 0 "C203" H 6015 3596 50  0000 L CNN
+F 1 "1u" H 6015 3505 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 5938 3400 50  0001 C CNN
+F 3 "~" H 5900 3550 50  0001 C CNN
+F 4 "963-UMF212B7105KGHT" H 5900 3550 50  0001 C CNN "Mouser Nr"
+	1    5900 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 3300 5000 3300
+Wire Wire Line
+	4600 3800 5300 3800
+Wire Wire Line
+	5300 3600 5300 3800
+Connection ~ 5300 3800
+Wire Wire Line
+	5900 3800 5900 3700
+Wire Wire Line
+	5300 3800 5900 3800
+Wire Wire Line
+	5900 3400 5900 3300
+Wire Wire Line
+	5900 3300 5600 3300
+Text HLabel 6300 3300 2    50   Output ~ 0
+VOUT
+Wire Wire Line
+	6300 3300 5900 3300
+Connection ~ 5900 3300
+$Comp
+L Regulator_Linear:MCP1703A-3302_SOT89 U201
+U 1 1 5EFF10C3
+P 5300 3300
+F 0 "U201" H 5300 3542 50  0000 C CNN
+F 1 "MCP1703A-3302_SOT89" H 5300 3451 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-89-3" H 5300 3500 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20005122B.pdf" H 5300 3250 50  0001 C CNN
+F 4 "579-MCP1703AT3302EMB" H 5300 3300 50  0001 C CNN "Mouser Nr"
+	1    5300 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C201
+U 1 1 5EFECE29
+P 4150 3550
+F 0 "C201" H 4265 3596 50  0000 L CNN
+F 1 "4.7u" H 4265 3505 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 4188 3400 50  0001 C CNN
+F 3 "~" H 4150 3550 50  0001 C CNN
+F 4 "963-EMF212AB7475KGHT" H 4150 3550 50  0001 C CNN "Mouser Nr"
+	1    4150 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4150 3400 4150 3300
+Connection ~ 4150 3300
+Wire Wire Line
+	4150 3300 4600 3300
+Wire Wire Line
+	4150 3700 4150 3800
+Connection ~ 4150 3800
+Wire Wire Line
+	4150 3800 4600 3800
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 5F05AD46
+P 5900 3200
+F 0 "#FLG0101" H 5900 3275 50  0001 C CNN
+F 1 "PWR_FLAG" H 5900 3373 50  0000 C CNN
+F 2 "" H 5900 3200 50  0001 C CNN
+F 3 "~" H 5900 3200 50  0001 C CNN
+	1    5900 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5900 3200 5900 3300
+$Comp
+L Device:D_Schottky D201
+U 1 1 5F06A132
+P 3800 3300
+F 0 "D201" H 3800 3083 50  0000 C CNN
+F 1 "D_Schottky" H 3800 3174 50  0000 C CNN
+F 2 "bbcar_stw_adc:D_SOD-123W" H 3800 3300 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/PMEG3010ER.pdf" H 3800 3300 50  0001 C CNN
+F 4 "771-PMEG3010ER115" H 3800 3300 50  0001 C CNN "Mouser Nr"
+	1    3800 3300
+	-1   0    0    1   
+$EndComp
+Text Notes 3450 3000 0    50   ~ 0
+Reverse current\nprotection for LDO
+Wire Wire Line
+	3950 3300 4150 3300
+Wire Wire Line
+	3350 3300 3650 3300
+Wire Wire Line
+	3350 3800 4150 3800
+$EndSCHEMATC

@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP MIC5233-3.3YS
+D 100mA Low Quiescent Current, High Input Voltage LDO, 3.3V output, SOT-223
+K regulator linear ldo
+F http://ww1.microchip.com/downloads/en/DeviceDoc/MIC5233-Data-Sheet-DS20006033D.pdf
+$ENDCMP
+#
+#End Doc Library
